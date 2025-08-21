@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Profile</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <header class="page-header">
+            <div class="logo-container">
+                <img src="./logo.svg" alt="The Leadership Thread Logo" class="logo-image">
+            </div>
+            <div class="header-right">
+                <div class="user-profile">
+                    <div class="profile-avatar"></div>
+                    <span class="profile-name">Dr. John Doe</span>
+                    <div class="dropdown-arrow"></div>
+                    <div class="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="partner-logo">
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="form-container">
+                <h1 class="form-title">Create Your Profile</h1>
+
+                <form action="#" method="POST">
+                    <div class="form-grid">
+
+                        <div class="form-section-title full-width">Your Name</div>
+                        <div class="form-group">
+                            <label for="first-name" class="sr-only">First Name</label>
+                            <input type="text" id="first-name" name="firstName" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name" class="sr-only">Last Name</label>
+                            <input type="text" id="last-name" name="lastName" placeholder="Last Name">
+                        </div>
+
+                        <div class="form-section-title full-width">Contact Details</div>
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile-no" class="sr-only">Mobile No</label>
+                            <input type="tel" id="mobile-no" name="mobileNo" placeholder="Mobile No">
+                        </div>
+
+                        <div class="form-section-title full-width">Select Primary Role:</div>
+                        <div class="form-section-title" style="color: white;">Role</div>
+                        <div class="form-section-title" style="color: white;">Specialty Type</div>
+                        <div class="form-group">
+                            <select id="role" name="role">
+                                <option value="" disabled selected>Select Primary Role</option>
+                                <optgroup label="Specialist">
+                                    <option value="owner">Owner</option>
+                                    <option value="partner">Partner</option>
+                                    <option value="associate">Associate</option>
+                                </optgroup>
+                                <optgroup label="Others">
+                                    <option value="hygenist">Hygenist</option>
+                                    <option value="psd">Practice Success Director</option>
+                                    <option value="sgp">Strategic Growth Partner</option>
+                                    <option value="tc">Treatment Consultant</option>
+                                    <option value="custom">Custom Role</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="specialty-type" name="specialtyType">
+                                <option value="" disabled selected>Select your specialty</option>
+                                <option value="periodontist">Periodontist</option>
+                                <option value="endodontist">Endodontist</option>
+                                <option value="oral_surgeon">Oral Surgeon</option>
+                                <option value="prosthodontist">Prosthodontist</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width checkbox-group">
+                            <input type="checkbox" id="is-producer" name="isProducer">
+                            <label for="is-producer">Is this user a producer?</label>
+                        </div>
+
+                        <div class="form-section-title full-width">Select Location</div>
+                        <div class="form-group">
+                            <label for="country" class="sr-only">Location</label>
+                            <select id="country" name="country">
+                                <option value="">Select</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="state" class="sr-only">State</label>
+                            <select id="state" name="state">
+                                <option value="">Select</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-cancel">Cancel</button>
+                        <button type="submit" class="btn btn-submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
